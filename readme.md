@@ -7,13 +7,12 @@ Following the steps below, the user can install the model and start using it
 
 1. replace the original file in WRF/chem directory with ***emissions_driver.F*** and ***chem_driver.F*** in the ***code-modified*** directory. The modified code is annotated with "WRF-NH3-CHEM modifed by renchuanhua"
 
-
 2. replace the original file in WRF/Registry directory with ***registry.chem*** and ***Registry.EM_COMMON*** in our ***registry-variable*** dir.
 
-
-3. put subdirectories ***./input-binary/nh3_agrisoil/fertilizer/freeinten/graze/industry/residential/transport*** into ***geog_data_path***
-
+3. put subdirectories ***./input-binary/nh3_agrisoil&fertilizer&freeinten&graze&industry&residential&transport*** into ***geog_data_path***
 
 4. replace the ***GEOGRID.TBL*** file in ***WPS***
 
-5.  finally, turn on the dynamic NH3 emission model in WRF-Chem by specifying nh3emis_opt = 1 in ***chem*** section of ***namelist.input*** file 
+5. compile the WRF-Chem model
+
+6. turn on the dynamic NH3 emission model in WRF-Chem by specifying nh3emis_opt = 1 in ***chem*** section of ***namelist.input*** file to use the dynamic NH3 emission model
